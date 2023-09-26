@@ -25,7 +25,7 @@ To run this project, you will need the following software and libraries:
 1. Clone the repository to your local machine using the following command:
 
    ```
-    git clone https://github.com/your-username/bikeshare-analysis.git
+    git clone git@github.com:Ravencodess/bike-share-project.git
    ```
 2. Navigate to the project directory:
 
