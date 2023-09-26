@@ -204,7 +204,7 @@ def time_stats(df):
     print(
         f'The most common hour for travel was: {convert_to_local_time(common_hour[0])}')
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print(f"\nThis took {time.time() - start_time} seconds to compute")
     print('-'*40)
 
 
@@ -245,7 +245,7 @@ def station_stats(df):
             start_station, end_station = key
     print(
         f"The most frequent combination of start station and end station trip was\nStart Station: {start_station}\nEnd station: {end_station}\nWith a total of {highest_frequency} trips")
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print(f"\nThis took {time.time() - start_time} seconds to compute")
     print('-'*40)
 
 
@@ -291,7 +291,7 @@ def trip_duration_stats(df):
     print(
         f"The Mean travel time was {hours} Hours, {minutes} Minutes and {seconds} Seconds")
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print(f"\nThis took {time.time() - start_time} seconds to compute")
     print('-'*40)
 
 
@@ -344,7 +344,7 @@ def user_stats(df):
         print(f"KeyError: info on {e} Doesn't exist ")
 
     print()
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print(f"\nThis took {time.time() - start_time} seconds to compute")
     print('-'*40)
 
 
@@ -399,7 +399,7 @@ def raw_data(dataframe):
     for chunk in chunker(dataframe, 5):
         # Prompt the user to see raw data
         user_choice = yes_no(
-            '\nWould you like to see 5 lines of raw data? Enter Yes or No: ')
+            '\nWould you like to see 5 lines of the raw data? Enter Yes or No: ')
 
         if user_choice != 'Yes':
             break
