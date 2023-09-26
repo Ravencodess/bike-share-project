@@ -12,7 +12,6 @@ This Python Bikeshare Data Analysis project is designed to explore and analyze b
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [License](#license)
 
 ## Requirements
 
@@ -68,6 +67,3 @@ The project directory structure is organized as follows:
     │
     └── (other project files and directories)
 ```
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
