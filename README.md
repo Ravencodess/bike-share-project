@@ -30,7 +30,7 @@ To run this project, you will need the following software and libraries:
 2. Navigate to the project directory:
 
     ```
-    cd bikeshare-analysis
+    cd /path/to/project/directory
     ```
 3. Install the required Python libraries using pip:
 
