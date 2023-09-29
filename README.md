@@ -1,5 +1,8 @@
 # Bikeshare Data Analysis Project
 
+## Date Created
+26/09/2023
+
 ## Overview
 
 This Python Bikeshare Data Analysis project is designed to explore and analyze bikeshare data from three major cities: Chicago, New York City, and Washington. The project includes a Python script that allows users to interactively explore various aspects of the bikeshare data, such as popular stations, trip duration statistics, and user demographics.
