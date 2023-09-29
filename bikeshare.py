@@ -22,7 +22,7 @@ def get_filters():
     This function interactively collects user preferences for city, month, and day filtering options.
     Users can choose to filter by month, day, both, or none to view the entire dataset.
     """
-    def getMonth():
+    def get_month():
         """
         Prompt the user to input a month for filtering.
 
@@ -49,7 +49,7 @@ def get_filters():
                 break
         return
 
-    def getDay():
+    def get_day():
         """
         Prompt the user to input a day of the week for filtering.
 
@@ -111,13 +111,13 @@ def get_filters():
             return
 
     if preference == 'Month':
-        month = getMonth()
+        month = get_month()
         return city, month, None
     elif preference == 'Day':
-        day = getDay()
+        day = get_day()
         return city, None, day
     elif preference == 'Both':
-        month, day = getMonth(), getDay()
+        month, day = get_month(), get_day()
         return city, month, day
     else:
         return city, None, None
@@ -367,7 +367,7 @@ def yes_no(prompt):
             else:
                 print('Please enter either Yes or No')
         except KeyboardInterrupt:
-            print(' \n Closing......')
+            print('\n Closing......')
             return
 
 
@@ -401,7 +401,7 @@ def raw_data(dataframe):
         user_choice = yes_no(
             '\nWould you like to see 5 lines of the raw data? Enter Yes or No: ')
 
-        if user_choice != 'Yes':
+        if user_choice == 'No':
             break
         else:
             print(chunk)
@@ -420,7 +420,7 @@ def main():
 
         # Prompt the user to restart the program
         restart = yes_no('\nWould you like to restart? Enter yes or no: ')
-        if restart != 'Yes':
+        if restart == 'No':
             break
 
 
